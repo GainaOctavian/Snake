@@ -1,15 +1,77 @@
-# Snake-Java-
-In this project I made three separate source files that operate in relation to eachother.
-The SnakeGame.java source file exists only to access the GameFrame.java source file every
-time that it's called. When the GameFrame is accessed, the game is reintialized, thus the GamePanel initializes all of the game's elements and methods. 
-In the beggining of the GamePanel there is defined the width (latime_ecran), the height (inaltime_ecran), a unit measure(marime_unitate) , number of units in 
-the game (unitati_joc) and a delay. After these I initialized two vectors based on the units in the game x and y, a number of parts of the snake's body (unitati corp)
-a variable that counts the number of apples eaten ( mereMancate), positioning for the apple (marX and marY), a direction that by default is right (directie), 
-a timer and a random variable. After these, I made a constructor for the GamePanel that starts the game and calls a function named startGame that creates
-an apple and starts the timer. Then I constructed some methods to paint the components of the game, to create a new apple and to move the 
-snake using the body parts (partiCorp), unit measure (marime_unitate) and direction (directie). Then I made two check methods to check 
-if an apple was eaten and to check if the snake collided with itself or one of the margins. 
-Next, I made a method for the end of the game, showing the score, a text and an option to restart the game.
-Lastly, I made two Override functions, the first one calling the check methods and the move method decribed above,
-and the second one adapting the user keyboard input into keyevents: giving the direction (directie) variable
-a value.
+
+# Snake Game - Java Implementation
+
+**Project by Aurelian-Octavian Găină**  
+*Classic Snake Game developed using Java*
+
+## 🎮 Overview
+
+This project is a Java implementation of the classic Snake game. It consists of three main source files that interact with each other to create a dynamic and engaging gameplay experience.
+
+## 🚀 Features
+
+- **Classic Gameplay:** Control the snake, eat apples, and grow without hitting the walls or yourself.
+- **Responsive Controls:** Smooth and responsive keyboard controls for seamless gameplay.
+- **Dynamic Difficulty:** The game speed increases as the snake grows.
+- **Score Tracking:** Keep track of the number of apples eaten.
+
+## 🛠️ Technologies Used
+
+- **Java** (Core Language)
+- **Swing Library:** For creating the graphical user interface (GUI).
+- **AWT Library:** For handling graphics and events.
+
+## 📂 Project Structure
+
+```
+Snake-Java/
+├── src/
+│   └── snake/
+│       ├── SnakeGame.java       # Entry point of the game
+│       ├── GameFrame.java       # Frame that initializes the game
+│       └── GamePanel.java       # Handles game logic, rendering, and controls
+├── bin/                         # Compiled Java classes
+├── README.md                    # Project documentation
+└── .settings/                   # Eclipse project settings
+```
+
+## ⚙️ How to Run
+
+### Prerequisites
+- **Java Development Kit (JDK)** installed on your system
+- **Eclipse IDE** (optional) for easier project management
+
+### Running the Game
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/GainaOctavian/Snake-Java.git
+   cd Snake-Java
+   ```
+
+2. **Compile the Source Files:**
+   ```bash
+   javac -d bin src/snake/*.java
+   ```
+
+3. **Run the Game:**
+   ```bash
+   java -cp bin snake.SnakeGame
+   ```
+
+Enjoy the game!
+
+## 🎯 Controls
+
+- **Arrow Keys:** Move the snake (Up, Down, Left, Right)
+- **Spacebar:** Pause/Resume the game
+
+## 📈 Future Improvements
+
+- Adding levels with increasing difficulty
+- Introducing power-ups and obstacles
+- Enhanced graphics and animations
+
+## 🙌 Credits
+
+This project was developed by Aurelian-Octavian Găină as a hands-on exercise to practice Java programming, game development, and GUI handling using Swing and AWT.
